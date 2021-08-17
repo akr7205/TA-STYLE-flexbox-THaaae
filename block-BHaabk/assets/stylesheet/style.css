@@ -53,81 +53,95 @@ table {
 *::after{
   box-sizing: border-box;
 }
+/* General */
 .container {
-    max-width: 1200px;
+    max-width: 1330px;
     margin: 0 auto;
     padding: 0 32px;
 }
-/* header */
-.header
-{
-    background-color: black;
-}
-.brand img{
-    width: 140px;
-    padding: 10px 0;
-    /* vertical-align: middle; */
-}
-.nav
+.flex
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-links a
+/* header */
+.header
 {
-    font-size: 24px;
+    background-color:#22396a;
+    padding: 32px 0;
+    position: fixed;
+    width: 100%;
+}
+.brand img
+{
+    width: 120px;
+}
+
+.nav a {
     text-decoration: none;
-    margin-left: 10px;
-    color:#fff;
+    color: #ffffff;
+    margin-left: 32px;
+    font-size: 20px;
 }
 /* main */
 /* article */
-.article
-{
-    background-color: antiquewhite;
+.article-section{
     padding: 80px 0;
-    /* padding-top: 153px; */
+    background-color: #e1e7f5;
+    padding-top: 175px;
 }
-.article-col
+.col-1-2{
+    width: 48%;
+}
+.article-img
 {
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    border-radius: 8px;
+    border: 4px solid #22396a;
 }
-.col-1
-{
-    padding-right: 32px;
-}
-.article-img{
-    width: 136%;
+.article-section .flex{
+    align-items: flex-start;
 }
 .article-heading
 {
-    font-size:32px;
-    margin-bottom:10px;
+    font-size: 44px;
+    color: #22396a;
+    margin-bottom: 16px;
 }
-.article-text
-{
-    font-size:20px;
-    line-height:1.7;
+.article-text{
+    font-size: 20px;
+    line-height: 1.7;
+    color: #676767;
 }
-/* gallery */
+/* Gallery */
 .gallery
 {
     padding: 80px 0;
-    /* background-color:aqua */
 }
-.img-gallery
-{
-    display: flex;
+.gallery .flex{
     flex-wrap: wrap;
 }
-.img-gallery img
-{
+.heading{
+    text-align: center;
+    color: #22396a;
+    font-size: 44px;
+    margin-bottom: 32px;
+}
+.col-1-3{
     width: 30%;
-    margin: 1.5%;
+    margin: 16px 0;
+}
+.gallery img
+{
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid #22396a;
+    height: 300px;
     object-fit: cover;
 }
+
+
 /* footer */
 .footer
 {
@@ -142,4 +156,23 @@ table {
     color: white;
     /* margin: 10px; */
     margin: 0 15px;
+}
+.top-btn
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    background-color: #1f1f1f;
+    position:fixed;
+    right: 32px;
+    bottom: 32px;
+    text-align: center;
+    /* line-height:48px; */
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
 }
